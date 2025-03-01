@@ -187,7 +187,7 @@ def bv_project():
             if None in data:
                 st.markdown(':red[Please select/input correct data.]')
             else:
-                st.write(f'Predicted Hotel Rental: {prediction[0]} $')
+                st.write(f'Predicted Hotel Rental: {prediction[0].round(2)} $')
 
 
 
