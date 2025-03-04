@@ -226,20 +226,19 @@ def bv_project_det():
                   amazing_pool, pool_view, surfing, jungle_view, islandlife, guest_house,
                   rice_paddy_view, tropical, ocean_view, beachfront, golfing, amazing_view]
         
-          with open("scaler.pkl", "rb") as scaler:
-              scaler = pickle.load(scaler)
-          with open("model.pkl", "rb") as model:
-              model = pickle.load(model)
-              
-          columns=['bedrooms', 'bathrooms', 'agency', 'city', 'area', 'number_of_guests',
-                   'Amazing pool', 'Pool view', 'Surfing', 'Jungle View', 'Island life','Guest House',
-                   'Rice paddy view', 'Tropical', 'Ocean view','Beachfront', 'Golfing', 'Amazing View']
-      
-          input_data_df = pd.DataFrame([data], columns=columns)
-      
-          std_data = scaler.transform(input_data_df)
-      
-          prediction = model.predict(std_data)
+    with open("scaler.pkl", "rb") as scaler:
+        scaler = pickle.load(scaler)
+    with open("model.pkl", "rb") as model:
+        model = pickle.load(model)
+        columns=['bedrooms', 'bathrooms', 'agency', 'city', 'area', 'number_of_guests',
+               'Amazing pool', 'Pool view', 'Surfing', 'Jungle View', 'Island life','Guest House',
+               'Rice paddy view', 'Tropical', 'Ocean view','Beachfront', 'Golfing', 'Amazing View']
+    
+        input_data_df = pd.DataFrame([data], columns=columns)
+    
+        std_data = scaler.transform(input_data_df)
+    
+        prediction = model.predict(std_data)
       #prediction
         if st.button('Predict'):
             if None in data:
