@@ -195,6 +195,7 @@ def bv_project_det():
             ricepaddyview_yes = 1
             rice_paddy_view = st.toggle("Rice Paddy View",
                                      value=bool(ricepaddyview_yes)
+            )
         # feature Tropical
             tropical_yes = 1
             tropical = st.toggle("Tropical",
