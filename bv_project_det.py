@@ -10,7 +10,7 @@ import pickle
 
 
 
-def bv_project():
+def bv_project_det():
     st.markdown(
         '''
             <h1 style='text-align: center; font-size:25px;'>
