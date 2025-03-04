@@ -222,9 +222,9 @@ def bv_project_det():
                                      value=bool(amazing_view_yes)
             )
           #Calling the model and scaler
-          data = [bedrooms, bathrooms, agency, city, area, number_of_guests,
-                  amazing_pool, pool_view, surfing, jungle_view, islandlife, guest_house,
-                  rice_paddy_view, tropical, ocean_view, beachfront, golfing, amazing_view]
+    data = [bedrooms, bathrooms, agency, city, area, number_of_guests,
+            amazing_pool, pool_view, surfing, jungle_view, islandlife, guest_house,
+            rice_paddy_view, tropical, ocean_view, beachfront, golfing, amazing_view]
         
     with open("scaler.pkl", "rb") as scaler:
         scaler = pickle.load(scaler)
