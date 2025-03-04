@@ -228,7 +228,7 @@ def bv_project_det():
         
     with open("scaler.pkl", "rb") as scaler:
         scaler = pickle.load(scaler)
-    with open("model.pkl", "rb") as model:
+    with open("modelDT-detail.pkl", "rb") as model:
         model = pickle.load(model)
         columns=['bedrooms', 'bathrooms', 'agency', 'city', 'area', 'number_of_guests',
                'Amazing pool', 'Pool view', 'Surfing', 'Jungle View', 'Island life','Guest House',
