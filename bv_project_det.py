@@ -86,7 +86,7 @@ def bv_project_det():
 
         # Load scaler and model
         try:
-            with open("scaler.pkl", "rb") as f:
+            with open("scaler-detail.pkl", "rb") as f:
                 scaler = pickle.load(f)
             with open("modelDT-detail.pkl", "rb") as f:
                 model = pickle.load(f)
