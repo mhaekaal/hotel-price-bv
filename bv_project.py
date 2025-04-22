@@ -19,15 +19,13 @@ def bv_project():
         ''',
         unsafe_allow_html=True
     )
-    '''
-    st.markdown(
-        '''
-            <figure style='text-align:center;'>
-                <img src='https://img.freepik.com/free-vector/hotel-building-tropical-country-with-palms-cartoon-icon_1284-63176.jpg?t=st=1740556535~exp=1740560135~hmac=f8be5e83778348e7d96fbc4a123ad40fe96354634b4a763b1127833f8178331c&w=900'>
-            </figure>
-        ''',
-        unsafe_allow_html=True
-    '''
+    #st.markdown(
+        #'''
+            #<figure style='text-align:center;'>
+                #<img src='https://img.freepik.com/free-vector/hotel-building-tropical-country-with-palms-cartoon-icon_1284-63176.jpg?t=st=1740556535~exp=1740560135~hmac=f8be5e83778348e7d96fbc4a123ad40fe96354634b4a763b1127833f8178331c&w=900'>
+            #</figure>
+        #''',
+        #unsafe_allow_html=True
     )
     st.markdown(
         '''
