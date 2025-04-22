@@ -19,6 +19,7 @@ def bv_project():
         ''',
         unsafe_allow_html=True
     )
+    '''
     st.markdown(
         '''
             <figure style='text-align:center;'>
@@ -26,6 +27,7 @@ def bv_project():
             </figure>
         ''',
         unsafe_allow_html=True
+    '''
     )
     st.markdown(
         '''
